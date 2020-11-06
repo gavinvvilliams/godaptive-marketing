@@ -1,0 +1,32 @@
+// Setup
+@import 'mixins';
+@import 'global';
+@import 'grid';
+
+// Variables
+@import 'colors';
+
+// Defaults
+@import 'typography';
+@import 'buttons';
+
+// Components
+@import 'components/banner';
+@import 'components/nav';
+@import 'components/hero';
+@import 'components/panel';
+@import 'components/get-started';
+
+// Pages
+@import 'blog';
+@import 'home';
+
+$backgroundColor: #ffffff;
+$bodyFont: 'Inter', sans-serif;
+
+body {
+  background: $backgroundColor;
+  color: $brand-body;
+  font-family: $bodyFont;
+}
+

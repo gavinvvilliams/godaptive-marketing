@@ -1,0 +1,38 @@
+.get-started {
+  margin-bottom: 120px;
+  
+  .container-fluid {
+    border-top: 1px solid #d8d7de;
+    padding-top: 120px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -1px;
+  }
+
+  .subheading {
+    display: block;
+    color: $brand-primary;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .row {
+    align-items: flex-end;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .button--tertiary {
+    margin-right: 16px;
+  }
+}

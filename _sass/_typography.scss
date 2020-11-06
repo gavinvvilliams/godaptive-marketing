@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+h1 {
+  font-size: 60px;
+  line-height: 68px;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+ul {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+  li {
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: underline;
+}
+
+.underlined {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    height: 8px;
+    width: calc(100% + 16px);
+    background-image: url('/assets/images/underline.png');
+    background-size: 100% 8px;
+    background-repeat: no-repeat;
+  }
+}
+
+.underlined--small {
+  &::after {
+    background-size: 100% 6px;
+    bottom: -4px;
+  }
+}
+
+h3.callout {
+  color: $brand-primary;
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 48px;
+  transform: rotate(-1deg);
+  padding-top: 60px;
+  width: calc(100% + 24px);
+  margin-left: -12px;
+}
+
+.h2--marketing {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.h3--marketing {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}

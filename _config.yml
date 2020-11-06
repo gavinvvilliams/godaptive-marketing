@@ -1,0 +1,9 @@
+url: "https://godaptive.ai"
+baseurl: "/"
+title: "Godaptive"
+
+sass:
+    sass_dir: _sass
+
+collections:
+    - authors

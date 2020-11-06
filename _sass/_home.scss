@@ -1,0 +1,117 @@
+.benefits {
+  margin-top: -360px;
+}
+
+.panels {
+  margin-top: 8px;
+  position: relative;
+  margin-bottom: 160px;
+
+  &::after {
+    content: ' ';
+    width: 50px;
+    height: 519px;
+    background-image: url('/assets/images/arrow--right.svg');
+    position: absolute;
+    right: -66px;
+    bottom: -260px;
+  }
+}
+
+.algorithms {
+  padding: 100px 0;
+  color: white;
+  background-color: $brand-body;
+  background-image: url('/assets/images/alrogithms__bg--tr.png'), url('/assets/images/alrogithms__bg--bl.png');
+  background-size: 1398px, 1112px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(100% + 670px) -400px, -500px 0;
+
+  p {
+    opacity: 0.8;
+    margin-bottom: 60px;
+  }
+}
+
+.icon {
+  margin-left: -12px;
+  margin-right: 8px;
+}
+
+.product-overview {
+  position: relative;
+  margin-bottom: 220px;
+  @include gradient--vertical;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    width: 100%;
+    background-image: url('/assets/images/cutout.png');
+    background-size: 100% 120px;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}
+
+.screenshot {
+  @include shadow--large;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.how-godaptive-works {
+  background-image: url('/assets/images/dots.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 240px;
+  margin-bottom: 200px;
+}
+
+.feature {
+  @include gradient--diag-br-tl;
+  padding: 40px;
+  border-radius: 16px;
+  min-height: 476px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.feature--right {
+  @include gradient--diag-bl-tr;
+}
+
+.row--intro {
+  p {
+    opacity: 0.8;
+    margin-bottom: 60px;
+  }
+}
+
+.row--feature {
+  margin-top: 100px;
+  align-items: center;
+
+  p {
+    opacity: 0.8;
+  }
+}
+
+.feature--title {
+  display: flex;
+  align-items: center;
+
+  .h3--marketing {
+    margin-bottom: 20px;
+  }
+}

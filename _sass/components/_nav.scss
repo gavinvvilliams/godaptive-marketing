@@ -1,0 +1,42 @@
+.nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  margin: 0;
+}
+
+.nav__link {
+  list-style-type: none;
+  margin-right: 40px;
+  font-weight: 500;
+  font-size: 16px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  a {
+    color: $brand-body;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+      color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+}
+
+.nav__link--highlight {
+  a {
+    color: $brand-primary;
+    font-weight: 700;
+  }
+}

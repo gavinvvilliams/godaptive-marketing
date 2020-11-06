@@ -1,0 +1,37 @@
+.banner {
+  background: $brand-primary;
+  text-decoration: none;
+  padding: 9px 24px;
+  display: block;
+
+  &:hover {
+    .banner__text {
+      border-color: white;
+    }
+  }
+}
+
+.banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  line-height: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 11px;
+  padding: 0 8px;
+  margin-right: 12px;
+}
+
+.banner__text {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}

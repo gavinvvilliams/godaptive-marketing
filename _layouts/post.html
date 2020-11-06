@@ -1,0 +1,61 @@
+{% assign author = site.data.authors[page.author] %}
+
+{% include head.html %}
+
+{% include components/banner.html %}
+{% include components/nav.html %}
+
+<section class="hero">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+        <h1 class="hero__title hero__title--blog">{{ page.title }}</h1>
+        <div class="hero__meta">
+          <span class="hero__author">
+            <img src="/assets/images/authors/{{ author.photo }}" alt="{{ author.name }}" />
+            {{ author.name }}
+          </span>
+          <span class="hero__date">
+            {{ page.date | date: '%d %B %Y' }}
+          </span>
+          <span class="hero__category">
+            {{ page.category }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <img src="/assets/images/blogs/featured/{{ page.featured_image }}" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="article">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        {{ content }}
+
+        <div class="share">
+          <h2>Like the article? Spread the word</h2>
+          <div class="share__links">
+            <a href="#" class="twitter">{% include svgs/twitter.html %}</a>
+            <a href="#" class="facebook">{% include svgs/facebook.html %}</a>
+            <a href="#" class="linkedin">{% include svgs/linkedin.html %}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include components/get-started.html %}
+
+{% include foot.html %}
