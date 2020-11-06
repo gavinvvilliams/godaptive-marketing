@@ -11,7 +11,7 @@
     content: ' ';
     width: 50px;
     height: 519px;
-    background-image: url('/assets/images/arrow--right.svg');
+    background-image: url('assets/images/arrow--right.svg');
     position: absolute;
     right: -66px;
     bottom: -260px;
@@ -22,7 +22,7 @@
   padding: 100px 0;
   color: white;
   background-color: $brand-body;
-  background-image: url('/assets/images/alrogithms__bg--tr.png'), url('/assets/images/alrogithms__bg--bl.png');
+  background-image: url('assets/images/alrogithms__bg--tr.png'), url('assets/images/alrogithms__bg--bl.png');
   background-size: 1398px, 1112px;
   background-repeat: no-repeat, no-repeat;
   background-position: calc(100% + 670px) -400px, -500px 0;
@@ -51,7 +51,7 @@
     right: 0;
     height: 120px;
     width: 100%;
-    background-image: url('/assets/images/cutout.png');
+    background-image: url('assets/images/cutout.png');
     background-size: 100% 120px;
     background-repeat: no-repeat;
     transform: scaleX(-1);
@@ -66,7 +66,7 @@
 }
 
 .how-godaptive-works {
-  background-image: url('/assets/images/dots.svg');
+  background-image: url('assets/images/dots.svg');
   background-repeat: no-repeat;
   background-position: 100% 240px;
   margin-bottom: 200px;
